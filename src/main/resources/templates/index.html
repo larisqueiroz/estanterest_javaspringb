@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://thymeleaf.org"
+	    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>AlugueldeLivrosApp</title>
+</head>
+
+<center>
+<body bgcolor="MediumAquamarine">
+	<h1>Lista de Alugueis</h1>
+	<h3><a href="/cadastrarAluguel">Cadastrar Aluguel</a></h3>
+</center>
+	<div th:each="aluguel : ${alugueis}">
+		<div class="row">
+			<p><span th:text="${aluguel.livro}"></s</span></p>
+			<p><span th:text="${aluguel.situacao}"></s</span></p>
+			<p><span th:text="${aluguel.solicitante}"></s</span></p>
+			<p><span th:text="${aluguel.devolucao}"></s</span></p>
+
+		</div>
+
+	</div>
+	
+	
+	
+</body>
+
+</html>
